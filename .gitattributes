@@ -1,4 +1,7 @@
 *.o linguist-generated=true
 *.elf linguist-generated=true
 vmlinux.h linguist-generated=true
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
