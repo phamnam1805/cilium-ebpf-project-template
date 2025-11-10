@@ -53,6 +53,13 @@ else
     echo "Warning: Makefile not found, skipping copy."
 fi
 
+# Copy .gitattributes
+if [ -f ".gitattributes" ]; then
+    cp .gitattributes "$FULL_PATH/" && echo "Copied .gitattributes"
+else
+    echo "Warning: .gitattributes not found, skipping copy."
+fi
+
 cd "$FULL_PATH" || { echo "Failed to cd into $FULL_PATH"; exit 1; }
 echo "Switched to project directory: $FULL_PATH"
 
